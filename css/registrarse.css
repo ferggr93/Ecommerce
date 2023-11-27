@@ -1,0 +1,80 @@
+
+.main-container{
+    
+    .contact-title{
+        margin:0 auto 20px auto;
+        color:#0a62b9;
+        font-size: 3rem;
+
+    }
+
+    .contact-title::first-letter{
+        color:rgb(30, 30, 101);
+        
+        
+    }
+}
+
+.contact-container{
+    display: flex;
+    background:linear-gradient(45deg, rgb(66, 66, 127), rgb(18, 18, 63));
+    width: 80%;
+    height:300px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px 5px grey;
+    
+    .form-contact{
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 0%;
+        height: 100%;
+        justify-content:center;
+        margin-top:30px;
+        padding:.5rem;
+
+        .input{
+            background-color:#272741;
+            border-bottom: solid 3px rgb(43, 43, 98);
+            margin:.3rem 0;
+            color:antiquewhite;
+            text-transform: capitalize;
+            
+
+        }
+
+        .btn-container{
+            text-align: center;
+            .btn-comprar{
+                width:80px;
+                padding:.4rem;
+                background-color: #0a62b9;
+                margin-top:10px;
+                color:antiquewhite;
+                border-radius: 5px;
+            }
+        }
+        
+    }
+
+    .map-container{
+        height: 100%;
+        flex:1 0 0%;
+
+        .map{
+            width:100%;
+            height:100%;
+        }
+
+
+    }
+}
+
+@media screen and (width < 768px){
+        .contact-container{
+            flex-direction: column;
+            height: auto;
+
+            
+        }
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Lugrasimo&family=Oswald:wght@300&family=Poppins:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Oswald:wght@300&family=Poppins:ital,wght@1,300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+:root{
+    --primary-color:#0a62b9;    
+    --margin-center:0 auto;
+    --text-center:center;
+    --padding:.75rem;
+    --radius: 5px;
+    --text-font:'Alegreya Sans', sans-serif;
+    --title-fonts:'poppins';
+}
+
+.main-container{
+    flex-direction: row;
+
+}
+
+.form-container{
+    margin-bottom:100px;
+    flex:1;
+}
+.table-container{
+    width:100%;
+    flex:1;
+    
+    position: relative;
+    margin-right: 15px;
+    .search{
+        margin:0;
+        position: absolute;
+        top:-20px;
+        right: 0;
+        
+    }
+    
+    .user-table { 
+    width: 100%;
+    box-shadow: 0 10px 10px grey;
+    border-collapse: collapse;
+    color: black;
+    margin:30px auto;
+
+    .table-head {
+        background-color: var(--primary-color);
+        
+        padding: 12px;
+    }
+    .table-body {
+        
+        tr {
+            
+            td {
+                padding: 12px;
+            }
+        }
+    }
+}
+
+.user-table :is(th, td) {
+    padding: 5px 10px;
+        border: 1px solid grey;
+}
+}
+
+
+
+@media screen and (width < 768px){
+    
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .user-table{
+        width: 100%;
+        display: block;
+        overflow-x: scroll;
+        margin:1rem;
+    }
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/javascript/guard.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="/css/user-admin.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/form.css" rel="stylesheet">
+    <link href="/css/product-admin.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <!--Estructura necesaria para generar menu hamburguesa-->
+    <input class="input-check" type="checkbox" id="check-menu">
+    
+    <label class="burger-menu" for="check-menu">
+
+        <span class="burger-line"></span>
+
+    </label>
+
+    <nav class="navbar">
+        <ul class="list">
+            <li class="nav-item">
+                <a href="/index.html" class="link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/pages/contacto.html" class="link">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a href="/pages/about-us.html" class="link">Acerca de</a>
+            </li>
+            <li class="nav-item">
+                <a href="/pages/form.html" class="link">Registrarse</a>
+            </li>
+            
+        </ul>
+    </nav>
+
+
+    <div class="user-menu">
+        <div class="user-name"></div>
+        <div class="user-action"></div>
+    </div>  
+</header>
+
+
+<main class="main-container">
+
+    <div class="search">
+        <input class="filter" id="filter" type="text" placeholder="Buscar...">
+    </div>
+
+    <section class="cards-container" id="cards-container">
+        
+
+            
+    </section>
+
+    <section class="register">
+
+          
+        <section class="table-container">
+            <table class="user-table">
+                <thead>
+                    <tr class="table-head">
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Consola</th>
+                        <th>Descripcion</th>
+                        <th>Fecha</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body-products">
+                    
+                </tbody>
+            </table>
+        </section>
+        
+        <section class="form-container">
+            <h1 class="form-title">Registrarse</h1>
+                <form action="" class="form" id="form">
+                    
+                    <input type="hidden" id="id">
+                    
+                    <label class="label" for="productName">Nombre</label>
+                    <input  type="text" id="productName" name="productName" placeholder="ingrese nombre" value="God of war" required class="input">
+                        
+                    <label class="label" for="price">Precio</label>
+                    <input  type="number" step="0.01"  id="price" name="price" placeholder="Ingrese precio" value="30000" required  class="input">
+                    
+                    <label class="label" for="consoles">Consolas</label>
+                        <input  type="text" name="consoles" id="consoles" value="steam" placeholder="Plataformas" required class="input">
+    
+                    <label class="label" for="image">Ingrese Imagen</label>
+                        <input type="url" name="image" id="image" value="" required placeholder="Imagen"  class="input">
+                    
+                    
+                    <label class="label" for="productDate">Fecha ingreso</label>
+                        <input type="date" name="productDate" id="productDate" value="2012-10-19" placeholder="Fecha ingreso" required class="input">
+                    
+                    
+                    
+                    <label class="label" for="description">Descripcion</label>
+                        <textarea class="description" id="description" name="description" required >
+    
+                        </textarea>
+                    
+    
+                    
+                        
+                    
+                        <button type="submit" class="submit">Agregar</button>
+                    
+                    
+    
+                </form>
+        </section>
+
+    </section>
+    
+</main>
+
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-icons">
+        <i class="fa-brands fa-instagram fa-beat icon" style="color: #2f3392;"></i>
+        <i class="fa-brands fa-facebook fa-beat icon" style="color: #2f3392;" ></i>
+        <i class="fa-brands fa-whatsapp fa-beat icon" style="color: #2f3392;"></i>
+        
+        
+    </div>
+
+    <div class="line"></div>
+
+    <div class="footer-title">
+        <h1 class="f-title">GamingSpot</h1>
+    </div>
+    <div class="line"></div>
+    <div class="footer-icons">
+        <i class="fa-regular fa-envelope fa-beat icon" style="color: #2f3392;" ></i>
+        <i class="fa-brands fa-telegram fa-beat icon" style="color: #2f3392;"></i>
+        <i class="fa-brands fa-twitter fa-beat icon" style="color: #2f3392;"></i>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/javascript/data.js"></script>
+<script src="/javascript/formatDate.js"></script>
+<script src="/javascript/funciones.js"></script>
+<script src="/javascript/header.js"></script>
+<script src="/javascript/product-admin.js"></script>
+</body>
+</html>

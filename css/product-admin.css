@@ -1,0 +1,49 @@
+.search{
+    margin:50px 0px 20px 0px;
+}
+
+
+
+.product-description{
+    display:-webkit-box;
+    /*hacia donde se orienta el texto*/
+    -webkit-box-orient:vertical;
+    /*Limitar numero de lineas del texto*/
+    -webkit-line-clamp:3;
+    overflow:hidden;
+    /*Agregar puntos al final*/
+    text-overflow: ellipsis;
+    
+}
+.cards-container#cards-container{
+    margin-bottom:100px;
+    width: 100%;
+
+}
+
+
+.register{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row-reverse;
+}
+
+@media screen and (width < 768px){
+    
+    .register{
+        flex-direction: column;
+        
+    }
+    .table-container{
+        
+        .user-table{
+        width: 100%;
+        display: block;
+        overflow-x: scroll;
+        margin:0 auto;
+    }
+    }
+    
+}
